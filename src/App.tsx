@@ -2,6 +2,7 @@ import { Navbar } from "./components/Navbar"
 import { useState } from "react"
 import { SideBar } from "./components/SideBar"
 import "./assets/styles/landing.css"
+import { FriendsBar } from "./components/FriendsBar"
 
 function App() {
 
@@ -49,7 +50,9 @@ function App() {
 
           <h1>asd</h1>
         </div>
-
+        <div className="grid-item4">
+          <FriendsBar/>
+      </div>
       </div>
     </>
   )

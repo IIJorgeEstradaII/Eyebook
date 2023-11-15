@@ -3,7 +3,7 @@
   width: 280px;
   position: fixed;
   top: 59px;
-  background-color: #d8d8d8;
+  background-color: #ffffff;
   border-radius: 5px;
   margin: 0 8px;
 }
@@ -26,6 +26,7 @@
 }
 
 .sb-li{
+  user-select: none;
   display: flex;
   align-items: center;
   padding: 8px;
@@ -51,7 +52,7 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #d8d8d8;
+  background-color: #ffffff;
   width: 280px;
   padding: 8 0px;
 }
@@ -70,6 +71,7 @@
 }
 
 .sb-footer-a{
+  user-select: none;
   color: black;
   text-decoration: none;
   width: 280px;
