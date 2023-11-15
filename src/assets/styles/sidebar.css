@@ -1,11 +1,10 @@
 .sidebar {
-  height: 100%;
   width: 280px;
   position: fixed;
   top: 59px;
-  background-color: #ffffff;
   border-radius: 5px;
   margin: 0 8px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .sidebar h2 {
@@ -40,6 +39,9 @@
 
 .sb-span{
   width: 220px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #050505;
+  font-size: 15px;
 }
 
 .sb-li:hover {
@@ -75,4 +77,8 @@
   color: black;
   text-decoration: none;
   width: 280px;
+}
+
+.sb-footer-a:hover{
+  text-decoration: underline;
 }

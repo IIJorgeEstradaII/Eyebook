@@ -16,11 +16,11 @@
   display: flex;
   font-size: 40px;
   align-items: center;
-  margin: 5px;
-  padding: 6px;
+  margin: 0 0 0 16px;
   border-radius: 50%;
   background-color: #0866FF;
   color: white;
+  width: 40px;
 }
 
 .ic-main:hover{
