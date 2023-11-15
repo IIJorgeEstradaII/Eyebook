@@ -1,0 +1,56 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  
+  height: 57px;
+
+  position: fixed;
+  width: 100%;
+
+}
+
+.options{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 50px 100px;
+}
+
+.sections {
+  display: flex;
+  align-items: center;
+}
+
+.logo-input{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+}
+
+.search-input{
+  color: white;
+  width: 115px;
+  text-decoration: none;
+  border: none;
+  padding-block: 0px;
+  padding-inline: 0px;
+  background-color: rgb(59, 59, 59);
+  padding: 10px;
+  outline: none;
+  box-shadow: none;
+  border-radius: 20px;
+}
+
+.search-input::placeholder{
+  color: white;
+}
