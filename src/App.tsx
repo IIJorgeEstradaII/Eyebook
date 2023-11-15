@@ -1,12 +1,9 @@
 import { Navbar } from "./components/Navbar"
-import { useState } from "react"
 import { SideBar } from "./components/SideBar"
 import "./assets/styles/landing.css"
 import { FriendsBar } from "./components/FriendsBar"
 
 function App() {
-
-  const [gordis, setGordis] = useState("Hola Gordis")
 
   return (
     <>
@@ -22,7 +19,7 @@ function App() {
         </div>
 
         <div className="grid-item2">
-          <h1 className="gordis" onClick={() => { setGordis("Bella") }}>{gordis}</h1>
+          <h1 className="gordis">gaa</h1>
           <h1>asd</h1>
           <h1>asd</h1>
           <h1>asd</h1>

@@ -1,4 +1,21 @@
 .friends-bar{
+  top: 56px;
+  overflow-y: hidden;
   position: fixed;
   margin: 0 8px;
+  height: calc(100% - 56px);
+  width: 380.90px;
+  bottom: 0px;
 }
+
+.friend-list{
+  right: 0px;
+  margin: 0 8px;
+  
+}
+
+.friends-bar:hover{
+  overflow-y: auto;
+  transition: overflow 1s ease;
+}
+

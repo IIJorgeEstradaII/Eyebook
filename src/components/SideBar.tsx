@@ -1,4 +1,3 @@
-import React from 'react'
 import "../assets/styles/sidebar.css"
 import Icons from '../assets/styles/icons.d'
 export const SideBar = () => {
@@ -16,15 +15,15 @@ export const SideBar = () => {
           </li>
           <li className='sb-li'>
             <div className='ico-sidebar'>{<Icons.Memories />}</div>
-            <span className='sb-span'>Recuerdos</span>
+            <span className='sb-span'>Memories</span>
           </li>
           <li className='sb-li'>
             <div className='ico-sidebar'>{<Icons.Saved />}</div>
-            <span className='sb-span'>Guardado</span>
+            <span className='sb-span'>Saved</span>
           </li>
           <li className='sb-li'>
             <div className='ico-sidebar'>{<Icons.Groups />}</div>
-            <span className='sb-span'>Grupos</span>
+            <span className='sb-span'>Groups</span>
           </li>
           <li className='sb-li'>
             <div className='ico-sidebar'> {<Icons.Videos/>}</div>
