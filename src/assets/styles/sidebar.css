@@ -25,6 +25,7 @@
 }
 
 .sb-li{
+  list-style: none;
   user-select: none;
   display: flex;
   align-items: center;

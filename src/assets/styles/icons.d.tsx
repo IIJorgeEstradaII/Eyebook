@@ -1,14 +1,15 @@
-import { RiHomeOfficeLine, RiNotification4Line , RiAccountCircleFill } from 'react-icons/ri';
+import { RiHomeOfficeLine, RiNotification4Line , RiAccountCircleFill  } from 'react-icons/ri';
 import { BiSolidVideos } from 'react-icons/bi';
 import {LuStore} from 'react-icons/lu';
 import { HiOutlineUserGroup, HiUserGroup } from 'react-icons/hi';
 import { CgGames } from 'react-icons/cg';
-import { BsMenuButtonWideFill, BsMessenger } from 'react-icons/bs';
+import { BsMenuButtonWideFill, BsMessenger, BsGearFill, BsMoonFill  } from 'react-icons/bs';
 import { AiFillEye } from 'react-icons/ai';
 import { GiThreeFriends, GiVerticalBanner } from "react-icons/gi";
 import { TiMediaRewind } from "react-icons/ti";
-import { MdOutlineOndemandVideo } from "react-icons/md";
-
+import { MdOutlineOndemandVideo, MdOutlineHelp } from "react-icons/md";
+import { TfiCommentsSmiley } from "react-icons/tfi";
+import { FiLogOut } from "react-icons/fi";
 
 const Icons = {
   Home: RiHomeOfficeLine,
@@ -25,7 +26,12 @@ const Icons = {
   Groups: HiUserGroup,
   Memories: TiMediaRewind,
   Saved: GiVerticalBanner,
-  Videos: MdOutlineOndemandVideo
+  Videos: MdOutlineOndemandVideo,
+  Gear: BsGearFill,
+  Help: MdOutlineHelp,
+  Moon: BsMoonFill,
+  Comments: TfiCommentsSmiley,
+  Logout: FiLogOut
 }
 
 export default Icons;

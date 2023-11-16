@@ -6,6 +6,7 @@
   height: calc(100% - 56px);
   width: 380.90px;
   bottom: 0px;
+  z-index: 5;
 }
 
 .friend-list{
@@ -16,6 +17,5 @@
 
 .friends-bar:hover{
   overflow-y: auto;
-  transition: overflow 1s ease;
 }
 

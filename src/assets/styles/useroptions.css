@@ -1,0 +1,32 @@
+.op-menu {
+  position: fixed;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000000;
+  margin-top: 56px;
+  right: 0;
+  margin-right: 10px;
+  width: 360px;
+  height: 457.25px;
+  border-radius: 13px;
+}
+
+.op-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.op-header span {
+  font-size: 18px;
+}
+
+.op-content{
+  padding: 8px;
+}
+
+.up-ul{
+  padding: 0px;
+}

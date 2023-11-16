@@ -38,7 +38,6 @@
 }
 
 .ic-sections {
-  margin: 5px;
   padding: 10px;
   background-color: rgb(104, 103, 103);
   border-radius: 50%;
@@ -53,4 +52,14 @@
   align-items: center;
   font-size: 36px;
   padding-right: 8px;
+}
+
+.ic-options {
+  font-size: 20px;
+  margin: 8px 12px 8px 0px;
+ /*  border-radius: 70%;
+  background-color: rgb(182, 179, 179); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,20 +1,18 @@
-import { useState} from 'react'
-import "../assets/styles/navbar.css"
 import Icons from "../assets/styles/icons.d"
+import "../assets/styles/navbar.css"
 import "../assets/styles/icon.css"
-import Modal from './Modal'
+import "../assets/styles/sidebar.css"
+import "../assets/styles/useroptions.css"
+import {useState } from "react"
+import { UserOptions } from "./UserOptions"
 
 export const Navbar: React.FC = () => {
 
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isMenueOpen, setMenuOpen] = useState(false);
 
-  const handleIconClick = () => {
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
+  const handleOpenMenu = () => {
+    setMenuOpen(!isMenueOpen)
+  }
 
   return (
     <>
@@ -40,12 +38,40 @@ export const Navbar: React.FC = () => {
           <a className='icon ic-sections'>{ <Icons.Menu/> }</a>
           <a className='icon ic-sections'>{ <Icons.Messenger/> }</a>
           <a className='icon ic-sections'>{<Icons.Notification />}</a>
-              <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-                Este es el children
-              </Modal>
-          <a className='icon ic-sections' onClick={ isModalOpen == true ? handleCloseModal : handleIconClick}>{<Icons.Account />}</a>
+          <a className='icon ic-sections' onClick={handleOpenMenu}>{<Icons.Account />}</a>
         </div>
       </div>
+      <UserOptions isOpen={isMenueOpen} >
+        <h4>User Options</h4>
+        <ul className="up-ul">
+          <li className="sb-li">
+            <div className="ic-options">
+              {<Icons.Gear/>}
+            </div>
+            <span className="sb-span">Settings and Privacy</span>
+          </li>
+          <li className="sb-li">
+            <div className="ic-options">
+              {<Icons.Help />}
+            </div>
+            <span className="sb-span">Go to Account</span></li>
+            <li className="sb-li">
+            <div className="ic-options">
+              {<Icons.Moon />}
+            </div>
+            <span className="sb-span">Screen and Accessibility</span></li>
+            <li className="sb-li">
+            <div className="ic-options">
+              {<Icons.Comments />}
+            </div>
+            <span className="sb-span">Comments</span></li>
+            <li className="sb-li">
+            <div className="ic-options">
+              {<Icons.Logout />}
+            </div>
+            <span className="sb-span">Logout</span></li>
+        </ul>
+          </UserOptions>
     </>
   )
 }
