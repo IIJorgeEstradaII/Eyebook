@@ -1,7 +1,7 @@
 import { Navbar } from "./components/Navbar"
 import { SideBar } from "./components/SideBar"
-import "./assets/styles/landing.css"
 import { FriendsBar } from "./components/FriendsBar"
+import "./assets/styles/landing.css"
 
 function App() {
 

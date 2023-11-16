@@ -1,8 +1,5 @@
 import Icons from "../assets/styles/icons.d"
-import "../assets/styles/navbar.css"
-import "../assets/styles/icon.css"
-import "../assets/styles/sidebar.css"
-import "../assets/styles/useroptions.css"
+import "../assets/styles/styles.css"
 import {useState } from "react"
 import { UserOptions } from "./UserOptions"
 
