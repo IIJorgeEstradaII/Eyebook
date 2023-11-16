@@ -44,32 +44,45 @@ export const Navbar: React.FC = () => {
       <UserOptions isOpen={isMenueOpen} >
         <h4>User Options</h4>
         <ul className="up-ul">
+
           <li className="sb-li">
             <div className="ic-options">
               {<Icons.Gear/>}
             </div>
-            <span className="sb-span">Settings and Privacy</span>
+            <span className="sb-span op-li">Configuracion y Privacidad</span>       
+            <div className="go-arrow">
+              { <Icons.SemiArrow/> }
+            </div>
           </li>
+
           <li className="sb-li">
             <div className="ic-options">
               {<Icons.Help />}
             </div>
-            <span className="sb-span">Go to Account</span></li>
+            <span className="sb-span op-li">Ayuda y asistencia</span>
+            <div className="go-arrow">
+              { <Icons.SemiArrow/> }
+            </div>
+          </li>
             <li className="sb-li">
             <div className="ic-options">
               {<Icons.Moon />}
             </div>
-            <span className="sb-span">Screen and Accessibility</span></li>
+            <span className="sb-span op-li">Pantalla y accesibilidad</span>
+            <div className="go-arrow">
+              { <Icons.SemiArrow/> }
+            </div>
+            </li>
             <li className="sb-li">
             <div className="ic-options">
               {<Icons.Comments />}
             </div>
-            <span className="sb-span">Comments</span></li>
+            <span className="sb-span">Enviar comentarios</span></li>
             <li className="sb-li">
             <div className="ic-options">
               {<Icons.Logout />}
             </div>
-            <span className="sb-span">Logout</span></li>
+            <span className="sb-span">Cerrar sesión</span></li>
         </ul>
           </UserOptions>
     </>

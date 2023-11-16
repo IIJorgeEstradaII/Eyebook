@@ -10,6 +10,7 @@ import { TiMediaRewind } from "react-icons/ti";
 import { MdOutlineOndemandVideo, MdOutlineHelp } from "react-icons/md";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { FiLogOut } from "react-icons/fi";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Icons = {
   Home: RiHomeOfficeLine,
@@ -31,7 +32,8 @@ const Icons = {
   Help: MdOutlineHelp,
   Moon: BsMoonFill,
   Comments: TfiCommentsSmiley,
-  Logout: FiLogOut
+  Logout: FiLogOut,
+  SemiArrow: IoIosArrowForward 
 }
 
 export default Icons;
