@@ -7,12 +7,13 @@ import { BsMenuButtonWideFill, BsMessenger, BsGearFill, BsMoonFill  } from 'reac
 import { AiFillEye } from 'react-icons/ai';
 import { GiThreeFriends, GiVerticalBanner } from "react-icons/gi";
 import { TiMediaRewind } from "react-icons/ti";
-import { MdOutlineOndemandVideo, MdOutlineHelp } from "react-icons/md";
+import { MdOutlineOndemandVideo, MdOutlineHelp, MdCopyright } from "react-icons/md";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { FiLogOut } from "react-icons/fi";
-import { IoIosArrowForward /* IoIosMore  */} from "react-icons/io";
+import { IoIosArrowForward, IoMdAddCircle } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { TfiMoreAlt } from "react-icons/tfi";
+import { IoPlay } from "react-icons/io5";
 
 const Icons = {
   Home: RiHomeOfficeLine,
@@ -37,7 +38,10 @@ const Icons = {
   Logout: FiLogOut,
   SemiArrow: IoIosArrowForward,
   More: TfiMoreAlt,
-  Search: FaSearch
+  Search: FaSearch,
+  Play: IoPlay,
+  CopyRight: MdCopyright,
+  AddAccount: IoMdAddCircle 
 }
 
 export default Icons;
