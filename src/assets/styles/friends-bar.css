@@ -9,13 +9,37 @@
   z-index: 5;
 }
 
-.friend-list{
-  right: 0px;
-  margin: 0 8px;
-  
-}
-
 .friends-bar:hover{
   overflow-y: auto;
 }
+
+.chats{
+  font-size: 17px;
+  width: 332.89;
+}
+
+.chats-header{
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+  padding: 0px 16px;
+}
+
+.chats-header__icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50%;
+  margin-top: 25%;
+  height: 26.17px;
+  width: 26.17px;
+}
+
+.chats-header__icons:hover{
+cursor: pointer;
+background-color: rgb(154, 154, 155);
+border-radius: 50%;
+transition: 0.5s ease;
+}
+
 

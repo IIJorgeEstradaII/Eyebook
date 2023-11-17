@@ -1,0 +1,83 @@
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  margin-top: 40px;
+  padding: 20px 0 28px;
+  height: 349.83px;
+  width: 396px;
+}
+
+.login-box{
+  height: 456px;
+  width: 396px;
+}
+
+.in-ce{
+  padding: 6px 0px;
+}
+
+.cre-inputs{
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.input-log{
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 330px;
+  border-radius: 6px;
+  border: 1px solid #dddfe2
+}
+
+.b-log{
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0px 16px;
+  width: 366px;
+  color: #FFFFFF;
+}
+
+.sb-b{
+  padding: 6px 0px 0px 0px;
+}
+
+.a-recover{
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.a-recover a{
+  text-decoration: none;
+  color: #1877f2;
+}
+
+
+.line-b{
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+}
+
+.su-b{
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #42b72a;
+  color: #fff;
+}

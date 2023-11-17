@@ -10,7 +10,9 @@ import { TiMediaRewind } from "react-icons/ti";
 import { MdOutlineOndemandVideo, MdOutlineHelp } from "react-icons/md";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { FiLogOut } from "react-icons/fi";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowForward /* IoIosMore  */} from "react-icons/io";
+import { FaSearch } from "react-icons/fa";
+import { TfiMoreAlt } from "react-icons/tfi";
 
 const Icons = {
   Home: RiHomeOfficeLine,
@@ -33,7 +35,9 @@ const Icons = {
   Moon: BsMoonFill,
   Comments: TfiCommentsSmiley,
   Logout: FiLogOut,
-  SemiArrow: IoIosArrowForward 
+  SemiArrow: IoIosArrowForward,
+  More: TfiMoreAlt,
+  Search: FaSearch
 }
 
 export default Icons;
