@@ -1,3 +1,15 @@
+/* User Interaction */
+.user-inter{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 132px;
+  padding-top: 92px ;
+}
+
+/* Form Styles */
+
 .login-form{
   display: flex;
   flex-direction: column;
@@ -14,6 +26,8 @@
   width: 396px;
   align-items: center;
 }
+
+/*Login Box*/
 
 .login-box{
   height: 496px;
@@ -99,15 +113,6 @@
 .msg a{
   text-decoration: none;
   color: #1c1E21;
-}
-
-.user-inter{
-  display: grid;
-  grid-template-columns: auto auto;
-  margin: auto;
-  justify-content: center;
-  padding-bottom: 132px;
-  padding-top: 92px ;
 }
 
 .current-modal{
@@ -198,9 +203,7 @@
 }
 
 .lang-list2 span {
-  justify-content: center;
- align-items: center;
- vertical-align: middle;
+  vertical-align: middle;
 }
 
 .brand{

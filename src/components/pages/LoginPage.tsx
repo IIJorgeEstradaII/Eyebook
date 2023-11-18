@@ -1,6 +1,6 @@
-import React from 'react'
-import "./login-page.css"
+import "../../assets/styles/login-page.css"
 import Icons from '../../assets/styles/icons.d'
+import { LoginForm } from "../login_components/LoginForm"
 
 export const LoginPage = () => {
 
@@ -31,19 +31,7 @@ export const LoginPage = () => {
           </div>
           <div className='login-box'>
             <div className='login-form'>
-              <form action="">
-                <div className='cre-inputs'>
-                  <div className='in-ce'>
-                    <input className='input-log' type="text" placeholder='Correo electrónico o número de teléfono' />
-                  </div>
-                  <div className='in-ce'>
-                    <input className='input-log' type="password" placeholder='Contraseña' />
-                  </div>
-                </div>
-                <div className='sb-b'>
-                  <button className='b-log' type='submit'>Iniciar sesión</button>
-                </div>
-              </form>
+              <LoginForm/>
             <div className='a-recover'>
               <a href="">¿Olvidaste tu contraseña?</a>
             </div>

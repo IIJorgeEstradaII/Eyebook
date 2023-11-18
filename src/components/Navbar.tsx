@@ -11,6 +11,11 @@ export const Navbar: React.FC = () => {
     setMenuOpen(!isMenueOpen)
   }
 
+  const handleLogout = () => {
+    localStorage.removeItem("token")
+    window.location.reload()
+  }
+
   return (
     <>
       <div className='navbar'>
@@ -79,7 +84,7 @@ export const Navbar: React.FC = () => {
             <div className="ic-options">
               {<Icons.Logout />}
             </div>
-            <span className="sb-span">Cerrar sesión</span></li>
+            <span className="sb-span" onClick={handleLogout}>Cerrar sesión</span></li>
         </ul>
           </UserOptions>
     </>

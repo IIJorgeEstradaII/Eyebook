@@ -1,29 +1,14 @@
-import { Navbar } from "./components/Navbar"
-import { SideBar } from "./components/SideBar"
-import { FriendsBar } from "./components/FriendsBar"
 import "./assets/styles/landing.css";
+import { LandingPage } from "./components/pages/LandingPage";
+import { LoginPage } from "./components/pages/LoginPage";
 
 function App() {
+  
+  const token = localStorage.getItem("token")
 
   return (
     <>
-      <div className="grid-container">
-
-        <div className="grid-item1">
-          <Navbar/>
-        </div>
-
-
-        <div className="grid-item3">
-          <SideBar/>
-        </div>
-
-        <div className="grid-item2">
-        </div>
-        <div className="grid-item4">
-          <FriendsBar/>
-      </div>
-      </div>
+      {token? <LandingPage/> : <LoginPage/> }
     </>
   )
 }
