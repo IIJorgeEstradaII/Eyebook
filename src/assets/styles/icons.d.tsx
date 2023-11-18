@@ -1,4 +1,4 @@
-import { RiHomeOfficeLine, RiNotification4Line , RiAccountCircleFill  } from 'react-icons/ri';
+import { RiHomeOfficeLine, RiNotification4Line , RiAccountCircleFill, RiQuestionFill   } from 'react-icons/ri';
 import { BiSolidVideos } from 'react-icons/bi';
 import {LuStore} from 'react-icons/lu';
 import { HiOutlineUserGroup, HiUserGroup } from 'react-icons/hi';
@@ -41,7 +41,8 @@ const Icons = {
   Search: FaSearch,
   Play: IoPlay,
   CopyRight: MdCopyright,
-  AddAccount: IoMdAddCircle 
+  AddAccount: IoMdAddCircle,
+  QuestionMark: RiQuestionFill 
 }
 
 export default Icons;

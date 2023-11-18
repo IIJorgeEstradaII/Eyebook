@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import CryptoJS from 'crypto-js'
 
 export const LoginForm = () => {
   
@@ -13,13 +14,22 @@ export const LoginForm = () => {
   )
 
   const handleSubmit = async(event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); 
+    event.preventDefault();
     try {
+
       const response = await axios.post("http://127.0.0.1:3000/users/sign_in", formData);
       const token = response.data.token
       localStorage.setItem("token", token)
-      window.location.reload()
       
+      const user = response.data.user
+      const encryptedData = CryptoJS.AES.encrypt(
+        JSON.stringify(user),
+        "23201118"
+      ).toString();
+      localStorage.setItem('user', encryptedData);
+    
+      window.location.reload();
+
     } catch (error: unknown) {
       if (axios.isAxiosError(error)) {
         console.log("Error response:", error.response);
@@ -39,7 +49,7 @@ export const LoginForm = () => {
       }
     }));
   };
-  console.log(formData)
+
   return (
     <>
       <form action="" onSubmit={handleSubmit}>

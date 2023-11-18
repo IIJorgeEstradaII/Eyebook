@@ -1,13 +1,40 @@
 import "../assets/styles/sidebar.css"
 import Icons from '../assets/styles/icons.d'
+import CryptoJS from 'crypto-js';
+
 export const SideBar = () => {
+
+  interface UserObject {
+    id: number;
+    email: string;
+    created_at: string;
+    updated_at: string;
+    name: string;
+    lastname: string;
+  }
+
+  let userObject: UserObject | undefined;
+
+  const sensibleData = localStorage.getItem("user");
+  
+  if (sensibleData) {
+    const user = CryptoJS.AES.decrypt(sensibleData, "23201118");
+    const decryptedData = CryptoJS.enc.Utf8.stringify(user);
+  
+    try {
+      userObject = JSON.parse(decryptedData);
+    } catch (error) {
+      console.error("Error al analizar JSON:", error);
+    }
+  }
+  
   return (
     <>
     <div className="sidebar">
       <ul className='sb-elements'>
           <li className='sb-li'>
             <div className='ico-sidebar'>{<Icons.Account />}</div>
-            <span className='sb-span'>Jorge Alejandro Estrada Pinelo</span>
+            <span className='sb-span'>{ userObject? userObject.name : 'No hay datos' }</span>
           </li>
           <li className='sb-li'>
             <div className='ico-sidebar'>{<Icons.Friends />}</div>

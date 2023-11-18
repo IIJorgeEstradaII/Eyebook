@@ -1,8 +1,21 @@
 import "../../assets/styles/login-page.css"
 import Icons from '../../assets/styles/icons.d'
 import { LoginForm } from "../login_components/LoginForm"
+import { SignUpForm } from "../login_components/SignUpForm";
+import { useState } from "react"
 
 export const LoginPage = () => {
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
 
   return (
     <>
@@ -37,7 +50,7 @@ export const LoginPage = () => {
             </div>
               <div className='line-b'></div>
               <div>
-                <button className='su-b'>Crear cuenta nueva</button>
+                <button className='su-b' onClick={openModal}>Crear cuenta nueva</button>
               </div>
             </div>
             <div className='msg'>
@@ -103,6 +116,7 @@ export const LoginPage = () => {
           </div>
           </div>
       </div>
+                <SignUpForm isOpen={isModalOpen} onClose={closeModal}/>
     </>
   )
 }
