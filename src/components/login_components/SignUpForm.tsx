@@ -14,9 +14,9 @@ export const SignUpForm = ({ isOpen, onClose }: ModalProps) => {
 
   const months =
     [
-    'enero', 'febrero', 'marzo', 'abril', 'mayo',
-    'junio', 'julio', 'agosto', 'septiembre',
-      'octubre', 'noviembre', 'diciembre'
+    'ene', 'feb', 'mar', 'abr', 'may',
+    'jun', 'jul', 'ago', 'sep',
+      'oct', 'nov', 'dic'
     ];
 
     const years: number[] = [];
@@ -79,33 +79,33 @@ export const SignUpForm = ({ isOpen, onClose }: ModalProps) => {
                 <div>Sexo <Icons.QuestionMark /></div>
               </div>
               <div className='gender'>
-                <div>
+              <div className='male'>
                   <label htmlFor="">Hombre</label>
                   <input value="male" type="radio" name="gender"/>
                 </div>
-                <div>
+                <div className='female'>
                   <label htmlFor="">Mujer</label>
                   <input value="female" type="radio" name="gender"/>
                 </div>
-                <div>
+                <div className='personalized'>
                   <label htmlFor="">Personalizado</label>
                   <input type="radio" name="gender"/>
                 </div>
               </div>
               <div className='end-msg'>
-                <div>
+                <div className='fst-msg'>
                   Es posible que las personas que usan nuestro
                   servicio hayan subido tu información de contacto
                   a Facebook. <a href="">Obtén más información</a>.
                 </div>
-                <div>
+                <div className='snd-msg'>
                   Al hacer clic en "Registrarte", aceptas nuestras
                     Condiciones, la <a href="">Política de privacidad</a> y la
                     <a href="">Política de cookies</a>. Es posible que te enviemos
                     notificacionespor SMS, que puedes desactivar cuando quieras.
                   </div>
                 </div>
-                <button type='submit'>Registrarte</button>
+                <button className='rgst-sbm-btn' type='submit'>Registrarte</button>
             </form>
         </div>
       </div>

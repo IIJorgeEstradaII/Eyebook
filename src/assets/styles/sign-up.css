@@ -16,7 +16,8 @@
   background: #fff;
   border-radius: 8px;
   width: 432px;
-  height: 551.67px;
+  height: 531.67px;
+  margin: 20px;
   text-align: center;
   z-index: 1000; 
 }
@@ -66,6 +67,8 @@
 .n-f, .ln-f, .m-f{
   padding: 11px;
   margin-bottom: 10px;
+  
+  /* font-size: 15px; */
 }
 
 .n-f{  
@@ -80,6 +83,15 @@
   margin: 0px;
   margin-bottom: 10px;
 }
+
+.n-f, .ln-f, .m-f, .pw-f, .day-d,
+.mth-d, .year-d,
+.male, .female, .personalized{
+  border-radius: 5px;
+  border-color: #ccd0d5;
+  border: 1px solid #ccd0d5;
+}
+
 
 .birth-d-msg, .gender-s{
   color: #606770;
@@ -102,8 +114,56 @@
   padding: 0px 8px;
   padding-right: 20px;
   background-size: 14px;
+  font-size: 15px;
 }
 
 .month, .year{
   padding-left: 12px;
+}
+
+.gender{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.male, .female, .personalized{
+  background-color: #fff;
+    border: 1px solid #ccd0d5;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1 0 auto;
+    font-weight: normal;
+    height: 36px;
+    margin: 8px 6px 6px;
+    padding: 0;
+    position: relative;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 10px 0 10px;
+    justify-content: space-between;
+    margin: 0px;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+}
+
+.fst-msg, .snd-msg{
+  color: #777;
+  font-size: 11px;
+  text-align: left;
+  margin: 11px 0px;
+  font-family: Helvetica, Arial, sans-serif;;
+}
+
+.rgst-sbm-btn{
+  background-color: #00a400;
+  width: 194px;
+  height: 36px;
+  letter-spacing: normal;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 32px;
+  text-shadow: none;
+  border: none;
+  margin: 10px 0px;
 }
