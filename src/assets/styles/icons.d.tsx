@@ -14,6 +14,7 @@ import { IoIosArrowForward, IoMdAddCircle } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { TfiMoreAlt } from "react-icons/tfi";
 import { IoPlay } from "react-icons/io5";
+import { CgClose } from "react-icons/cg";
 
 const Icons = {
   Home: RiHomeOfficeLine,
@@ -42,7 +43,8 @@ const Icons = {
   Play: IoPlay,
   CopyRight: MdCopyright,
   AddAccount: IoMdAddCircle,
-  QuestionMark: RiQuestionFill 
+  QuestionMark: RiQuestionFill,
+  CloseX: CgClose 
 }
 
 export default Icons;

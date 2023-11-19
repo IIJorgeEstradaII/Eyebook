@@ -160,8 +160,21 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.lang-list1 li{
+.other-li{
   padding-left: 20px;
+}
+
+.other-cut{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.swt-li{
+  padding-left: 10px;
+}
+
+.first-li{
+  color: #8a8d91;
 }
 
 .lang-sep{
@@ -177,6 +190,8 @@
   list-style: none;
   padding: 0px;
   width: 1000px;
+  font-size: 11px;
+  margin: 0px;
 }
 
 .lang-list2 a{
@@ -187,7 +202,7 @@
 }
 .lang-list2 li {
   white-space: nowrap;
-  padding-left: 20px;
+  height: 19.19px;
 }
 
 .inter-footer{
@@ -196,10 +211,11 @@
 }
 
 .more-lang{
-  bottom: 1px;
   position: relative;
   vertical-align: middle;
   font: 12px;
+  height: 20px;
+  margin: 0px;
 }
 
 .lang-list2 span {
@@ -207,13 +223,19 @@
 }
 
 .brand{
-  color: #737373;
-  padding-left: 20px;
+  color: #8a8d91;
   font-size: 11px;
   font-family: 'Noto Sans', sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
+  height: 14.73px;
+  vertical-align: middle;
 }
+
+.optons-list{
+  height: 57.56px;
+}
+
 
 /* Add account modal */
 

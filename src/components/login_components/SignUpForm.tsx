@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../assets/styles/styles.css"
-import "../../assets/styles/sign-up.css"
+import "../../assets/styles/signup-form.css"
 import Icons from '../../assets/styles/icons.d'
 
 interface ModalProps{
@@ -30,7 +30,10 @@ export const SignUpForm = ({ isOpen, onClose }: ModalProps) => {
     <div className="modal-overlay">
       <div className="modal">
         <div className='sig-msg'>
+          <div className='rg-msg-cm'>
             <div className='md-t'>Registrate</div>
+            <div className='cm-ic' onClick={onClose}><Icons.CloseX/></div>
+          </div>
           <div className='md-sb'>Es rápido y fácil.</div>
         </div>
         <div className='signup-form'>
