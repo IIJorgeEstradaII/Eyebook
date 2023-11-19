@@ -15,8 +15,8 @@
 .modal {
   background: #fff;
   border-radius: 8px;
-  width: 432px;
-  height: 531.67px;
+  width: 430px;
+  height: 525px;
   margin: 20px;
   text-align: center;
   z-index: 1000; 
@@ -38,11 +38,13 @@
   grid-template-rows: auto auto;
   padding: 10px 16px;
   text-align: left;
+  bottom: 0;
 }
 
 .md-t{
   font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
   font-size: 32px;
+  height: 38px;
   font-weight: 600;
 }
 
@@ -51,24 +53,30 @@
   color: #606770;
   font-size: 15px;
   font-weight: normal;
+  height: 24px;
 }
 
 /* Sign-up Form */
 
 .signup-form{
   padding: 16px;
+  width: 468.67.67px;
+  border-top: 1px solid #dadde1;
 }
 
 .fullname-field{
   display: flex;
   flex-direction: row;
+  width: 400px;
+}
+
+.n-f, .ln-f{
+  width: 170px;
 }
 
 .n-f, .ln-f, .m-f{
   padding: 11px;
   margin-bottom: 10px;
-  
-  /* font-size: 15px; */
 }
 
 .n-f{  
@@ -129,21 +137,22 @@
 
 .male, .female, .personalized{
   background-color: #fff;
-    border: 1px solid #ccd0d5;
-    box-sizing: border-box;
-    display: inline-block;
-    flex: 1 0 auto;
-    font-weight: normal;
-    height: 36px;
-    margin: 8px 6px 6px;
-    padding: 0;
-    position: relative;
-    font-size: 15px;
-    line-height: 36px;
-    padding: 0 10px 0 10px;
-    justify-content: space-between;
-    margin: 0px;
-    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  border: 1px solid #ccd0d5;
+  box-sizing: border-box;
+  display: inline-block;
+  flex: 1 0 auto;
+  font-weight: normal;
+  height: 36px;
+  margin: 8px 6px 6px;
+  padding: 0;
+  position: relative;
+  font-size: 15px;
+  line-height: 36px;
+  padding: 0 10px 0 10px;
+  justify-content: space-between;
+  margin: 0px;
+  font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+  text-align: left;
 }
 
 .fst-msg, .snd-msg{
@@ -166,4 +175,20 @@
   text-shadow: none;
   border: none;
   margin: 10px 0px;
+}
+
+.male, .female, .personalized{
+  display: flex;
+  flex-direction: row;
+}
+
+.female{
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.ma-i, .fa-i, .pe-i {
+  vertical-align: middle;
+  margin: 0px;
+  left: 0px;
 }

@@ -30,45 +30,45 @@ export const SignUpForm = ({ isOpen, onClose }: ModalProps) => {
     <div className="modal-overlay">
       <div className="modal">
         <div className='sig-msg'>
-          <div className='md-t'>Registrate</div>
+            <div className='md-t'>Registrate</div>
           <div className='md-sb'>Es rápido y fácil.</div>
         </div>
         <div className='signup-form'>
           <form action="">
             <div className='fullname-field'>
               <div className='name-field'>
-                <input className="n-f" type="text" placeholder='Nombre'/>
+                <input className="n-f" type="text" placeholder='Nombre' required/>
               </div>
               <div className='lastname-field'>
-                <input className="ln-f" type="text" placeholder='Apellido'/>
+                <input className="ln-f" type="text" placeholder='Apellido'required/>
               </div>
             </div>
             <div className='mail-field'>
-              <input className="m-f" type="text" placeholder='Número de celular o correo electrónico '/>
+              <input className="m-f" type="text" placeholder='Número de celular o correo electrónico' required/>
             </div>
             <div className='password-field'>
-              <input className='pw-f' type="password" placeholder='Contraseña Nueva' />
+              <input className='pw-f' type="password" placeholder='Contraseña Nueva' required/>
             </div>
             <div>
               <div className='birth-d-msg'>Fecha de Nacimiento <Icons.QuestionMark /></div>
             </div>
             <div className='birth-date-data'>
               <div>
-              <select className='day-d' name="day" id="">
+              <select className='day-d' name="day" id="" required>
               {[...Array(31)].map((_, index) => (
                 <option key={index + 1} value={index + 1}>{index + 1}</option>
                 ))}
               </select>
               </div>
             <div className='month'>
-              <select className='mth-d' name="" id="">
+              <select className='mth-d' name="" id="" required>
                 {months.map((month, index) =>
                   <option key={index} value={month}>{ month }</option>
                 )}
               </select>
             </div>
             <div className='year'>
-              <select className='year-d' name="" id="">
+              <select className='year-d' name="" id="" required>
                 {years.map((year, index) => 
                   <option key={index} value={year}>{ year }</option>
                   ) }
@@ -81,15 +81,15 @@ export const SignUpForm = ({ isOpen, onClose }: ModalProps) => {
               <div className='gender'>
               <div className='male'>
                   <label htmlFor="">Hombre</label>
-                  <input value="male" type="radio" name="gender"/>
+                  <input className='ma-i' value="male" type="radio" name="gender" required/>
                 </div>
                 <div className='female'>
                   <label htmlFor="">Mujer</label>
-                  <input value="female" type="radio" name="gender"/>
+                  <input className='fa-i' value="female" type="radio" name="gender" required/>
                 </div>
                 <div className='personalized'>
                   <label htmlFor="">Personalizado</label>
-                  <input type="radio" name="gender"/>
+                  <input className='pe-i' type="radio" name="gender"/>
                 </div>
               </div>
               <div className='end-msg'>
