@@ -1,35 +1,33 @@
-import axios from 'axios'
-import React, { useState } from 'react'
-import CryptoJS from 'crypto-js'
+import axios from "axios";
+import React, { useState } from "react";
+import CryptoJS from "crypto-js";
 
 export const LoginForm = () => {
-  
-  const [formData, setFormData] = useState(
-    { 
-      user: {
-        email: "",
-        password: ""
-      }
-    }
-  )
+  const [formData, setFormData] = useState({
+    user: {
+      email: "",
+      password: "",
+    },
+  });
 
-  const handleSubmit = async(event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
+      const response = await axios.post(
+        "http://127.0.0.1:3000/users/sign_in",
+        formData
+      );
+      const token = response.data.token;
+      localStorage.setItem("token", token);
 
-      const response = await axios.post("http://127.0.0.1:3000/users/sign_in", formData);
-      const token = response.data.token
-      localStorage.setItem("token", token)
-      
-      const user = response.data.user
+      const user = response.data.user;
       const encryptedData = CryptoJS.AES.encrypt(
         JSON.stringify(user),
         "23201118"
       ).toString();
-      localStorage.setItem('user', encryptedData);
-    
-      window.location.reload();
+      localStorage.setItem("user", encryptedData);
 
+      window.location.reload();
     } catch (error: unknown) {
       if (axios.isAxiosError(error)) {
         console.log("Error response:", error.response);
@@ -37,7 +35,7 @@ export const LoginForm = () => {
         console.error("Error desconocido:", error);
       }
     }
-  }
+  };
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -45,26 +43,42 @@ export const LoginForm = () => {
       ...prevFormData,
       user: {
         ...prevFormData.user,
-        [name]: value
-      }
+        [name]: value,
+      },
     }));
   };
 
   return (
     <>
       <form action="" onSubmit={handleSubmit}>
-        <div className='cre-inputs'>
-            <div className='in-ce'>
-                <input className='input-log' name="email" type="email" value={formData.user.email} onChange={handleChange} placeholder='Correo electrónico o número de teléfono' />
-                  </div>
-                    <div className='in-ce'>
-                    <input className='input-log' name="password" type="password" value={formData.user.password} onChange={handleChange} placeholder='Contraseña' />
-                  </div>
-                </div>
-              <div className='sb-b'>
-            <button className='b-log' type='submit'>Iniciar sesión</button>
+        <div className="cre-inputs">
+          <div className="in-ce">
+            <input
+              className="input-log"
+              name="email"
+              type="email"
+              value={formData.user.email}
+              onChange={handleChange}
+              placeholder="Correo electrónico o número de teléfono"
+            />
+          </div>
+          <div className="in-ce">
+            <input
+              className="input-log"
+              name="password"
+              type="password"
+              value={formData.user.password}
+              onChange={handleChange}
+              placeholder="Contraseña"
+            />
+          </div>
+        </div>
+        <div className="sb-b">
+          <button className="b-log" type="submit">
+            Iniciar sesión
+          </button>
         </div>
       </form>
     </>
-  )
-}
+  );
+};
