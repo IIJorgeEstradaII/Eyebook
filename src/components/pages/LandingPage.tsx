@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar } from "../Navbar";
 import { SideBar } from "../SideBar";
 import { FriendsBar } from "../FriendsBar";
+import { CreateContent } from "../create_content/CreateContent";
 
 export const LandingPage = () => {
   return (
@@ -13,7 +14,9 @@ export const LandingPage = () => {
         <div className="grid-item3">
           <SideBar />
         </div>
-        <div className="grid-item2">{/* Contenido del grid-item2 */}</div>
+        <div className="grid-item2">
+          <CreateContent />
+        </div>
         <div className="grid-item4">
           <FriendsBar />
         </div>

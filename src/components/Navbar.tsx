@@ -20,6 +20,10 @@ export const Navbar: React.FC = () => {
     window.location.reload();
   };
 
+  const toMainPage = () => {
+    navigate("/home");
+  };
+
   return (
     <>
       <div className="navbar">
@@ -38,7 +42,9 @@ export const Navbar: React.FC = () => {
 
         <div>
           <ul className="options">
-            <li className="icon">{<Icons.Home />}</li>
+            <li className="icon" onClick={toMainPage}>
+              {<Icons.Home />}
+            </li>
             <li className="icon">{<Icons.Video />}</li>
             <li className="icon">{<Icons.Store />}</li>
             <li className="icon">{<Icons.Group />}</li>

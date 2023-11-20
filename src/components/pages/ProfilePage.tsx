@@ -61,10 +61,10 @@ export const ProfilePage = () => {
               <div className="user-photo">
                 <img className="profile-photo" src={defaultProfileImg} alt="" />
               </div>
-              <div className="user-upl-photo">
-                <div className="upl-photo-btn">
-                  <Icons.Camera />
-                </div>
+            </div>
+            <div className="user-upl-photo">
+              <div className="upl-photo-btn">
+                <Icons.Camera />
               </div>
             </div>
             <div className="user-name">

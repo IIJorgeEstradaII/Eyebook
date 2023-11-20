@@ -84,6 +84,7 @@
   bottom: 0;
   right: 0;
   margin-right: 32px;
+  padding-bottom: 0px;
 }
 
 .mk-ava:hover, .up-photo:hover{

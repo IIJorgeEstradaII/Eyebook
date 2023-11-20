@@ -34,10 +34,12 @@ export const SideBar = () => {
     <>
       <div className="sidebar">
         <ul className="sb-elements">
-          <li className="sb-li" onClick={() => navigate("profile")}>
+          <li className="sb-li" onClick={() => navigate("/profile")}>
             <div className="ico-sidebar">{<Icons.Account />}</div>
             <span className="sb-span">
-              {userObject ? userObject.name : "No hay datos"}
+              {userObject
+                ? userObject.name + " " + userObject.lastname
+                : "No hay datos"}
             </span>
           </li>
           <li className="sb-li">
