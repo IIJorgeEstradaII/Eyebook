@@ -22,11 +22,12 @@ import {
   MdOutlineOndemandVideo,
   MdOutlineHelp,
   MdCopyright,
+  MdOutlineAdd,
 } from "react-icons/md";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { FiLogOut } from "react-icons/fi";
 import { IoIosArrowForward, IoMdAddCircle } from "react-icons/io";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaPen, FaChevronDown } from "react-icons/fa";
 import { TfiMoreAlt } from "react-icons/tfi";
 import { IoPlay } from "react-icons/io5";
 import { CgClose } from "react-icons/cg";
@@ -63,6 +64,9 @@ const Icons = {
   CloseX: CgClose,
   Avatar: PiMaskHappyFill,
   Camera: BsCameraFill,
+  AddHistory: MdOutlineAdd,
+  Pen: FaPen,
+  DownArrow: FaChevronDown,
 };
 
 export default Icons;

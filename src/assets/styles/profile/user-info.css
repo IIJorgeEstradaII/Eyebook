@@ -52,8 +52,11 @@
 }
 
 .user-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   width: 616.5px;
-  margin: 32px 0px 16px;
+  margin: 20px 0px 16px;
 }
 
 .name {
@@ -64,14 +67,12 @@
   color: #050505;
   font-weight: 700;
 }
-
 .user-friends {
+  padding: 6.98px 0px 0px;
   width: 470.05px;
-  height: 10px;
-  padding: 12px 0px 0px;
+  height: 20px;
   font-size: 15px;
   font-weight: 600;
   color: #65676b;
   font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
-

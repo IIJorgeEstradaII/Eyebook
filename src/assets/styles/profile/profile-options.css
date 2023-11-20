@@ -1,0 +1,101 @@
+.user-actions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 355.5px;
+  margin-top: 42px;
+  margin-left: 25px;
+  height: 44px;
+  top: 10px;
+}
+.element-add-hi, .element-ed-pr, .element-fnd-eye{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 12px;
+  height: 36px;
+  width: 133.95px;
+  border-radius: 5px;
+}
+.element-ed-pr, .element-fnd-eye{
+  padding: 0px 12px;
+  height: 36px;
+  width: 101.55px;
+  border-radius: 5px;
+}
+.element-add-hi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #0666FF;
+}
+
+.element-ed-pr, .element-fnd-eye{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #c2c3c5;
+}
+.element-fnd-eye{
+  width: 16px;
+  padding: 0px 16px;
+}
+.user-add-history{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user-edit-profile{
+  display: flex;
+  flex-direction: row;
+}
+.user-find-eyebooks{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.add-his-icon, .edit-pofile-icon, .find-eyebooks-arrow{
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+.add-his-icon{
+  color: white;
+  font-size: 16px;
+}
+.add-his-txt, .edit-profile-txt{
+  font-size: 15px;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: 550;
+  color: white;
+}
+.edit-profile-txt{
+  color: black;
+  height: 19.98px;
+}
+.add-his-txt{
+  height: 19.98px;
+}
+.edit-pofile-icon{
+  margin-right: 4.665px;
+}
+.edit-profile-txt{
+  margin-left: 4.665px;
+}
+.add-his-txt{
+  margin-left: 4.8675px;
+}
+.element-ed-pr:hover, .element-fnd-eye:hover{
+  cursor: pointer;
+  background-color: #a1a1a1;
+}
+.element-add-hi:hover{
+  cursor: pointer;
+}
+.add-his-icon{
+  margin-right: 4.8675px;;
+  font-size: 19px;
+}

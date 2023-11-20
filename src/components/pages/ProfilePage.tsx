@@ -76,9 +76,29 @@ export const ProfilePage = () => {
               <div className="user-friends">268 amigos</div>
             </div>
             <div className="user-actions">
-              <div className="user-add-history"></div>
-              <div className="user-edit-profile"></div>
-              <div className="user-find-eyebooks"></div>
+              <div className="element-add-hi">
+                <div className="user-add-history">
+                  <div className="add-his-icon">
+                    <Icons.AddHistory />
+                  </div>
+                  <div className="add-his-txt">Añadir Historia</div>
+                </div>
+              </div>
+              <div className="element-ed-pr">
+                <div className="user-edit-profile">
+                  <div className="edit-pofile-icon">
+                    <Icons.Pen />
+                  </div>
+                  <div className="edit-profile-txt">Editar perfil</div>
+                </div>
+              </div>
+              <div className="element-fnd-eye">
+                <div className="user-find-eyebooks">
+                  <div className="find-eyebooks-arrow">
+                    <Icons.DownArrow />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
