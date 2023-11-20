@@ -1,0 +1,59 @@
+.content-container{
+  height: 89px;
+  width: 647px;
+  padding: 12px 16px 10px;
+  box-shadow: 0 1px 2px;
+  border-radius: 8px;
+  border: none;
+}
+.wrt-txt{
+  display: flex;
+  flex-direction: row;
+}
+.photo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.create-txt{
+  width: 600px;
+  height: 24px;
+  padding: 8px 12px;
+  font-size: 17px;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  border-radius: 20px;
+  border: none
+}
+.add-cre-multimedia{
+  display: flex;
+  flex-direction: row;
+}
+.create-live, .upl-photo-video, .fe-act{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 24px;
+  padding: 8px;
+}
+.create-live-icon, .photo-video-icon, .fe-act-icon{
+  font-size: 24px;
+  margin-right: 8px;
+}
+.create-live-txt, .upl-photo-video-txt, .fe-act-txt{
+  height: 24px;
+  font-size: 15px;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  font-weight: 550px;
+  color: #65676b;
+}
+.create-live-icon{
+  color: red;
+}
+.photo-video-icon{
+  color: rgb(5, 233, 5);
+}
+.fe-act-icon{
+  color: orange
+}

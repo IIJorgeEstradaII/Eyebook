@@ -23,15 +23,18 @@ import {
   MdOutlineHelp,
   MdCopyright,
   MdOutlineAdd,
+  MdInsertEmoticon,
 } from "react-icons/md";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { FiLogOut } from "react-icons/fi";
 import { IoIosArrowForward, IoMdAddCircle } from "react-icons/io";
 import { FaSearch, FaPen, FaChevronDown } from "react-icons/fa";
-import { TfiMoreAlt } from "react-icons/tfi";
+import { TfiMoreAlt, TfiGallery } from "react-icons/tfi";
 import { IoPlay } from "react-icons/io5";
 import { CgClose } from "react-icons/cg";
 import { PiMaskHappyFill } from "react-icons/pi";
+import { HiVideoCamera } from "react-icons/hi2";
+import { GrGallery } from "react-icons/gr";
 
 const Icons = {
   Home: RiHomeOfficeLine,
@@ -67,6 +70,9 @@ const Icons = {
   AddHistory: MdOutlineAdd,
   Pen: FaPen,
   DownArrow: FaChevronDown,
+  LiveCamera: HiVideoCamera,
+  Gallery: TfiGallery,
+  Emoticon: MdInsertEmoticon,
 };
 
 export default Icons;

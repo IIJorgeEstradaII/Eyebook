@@ -9,7 +9,9 @@
 }
 
 .grid-item2{
-  margin-top: 59px;
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
 }
 
 .grid-item4{
